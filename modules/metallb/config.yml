@@ -1,0 +1,15 @@
+peers:
+  # Route Reflector 1
+  - peer-address: 10.1.0.10
+    peer-asn: 207871
+    my-asn: 207871
+address-pools:
+  - name: default
+    protocol: bgp
+    addresses:
+      - 10.128.1.0/24
+  - name: public-ips
+    protocol: bgp
+    addresses:
+      - 45.151.166.0/24
+    auto-assign: false
